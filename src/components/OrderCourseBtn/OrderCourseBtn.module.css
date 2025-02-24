@@ -79,7 +79,7 @@
   transition: transform ease-in-out 250ms;
 
   stroke: currentColor;
-  fill: currentColor;
+  fill: var(--text-dark);
 }
 
 .button:hover .buttonText {
