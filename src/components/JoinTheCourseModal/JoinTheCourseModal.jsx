@@ -38,33 +38,34 @@ const JoinTheCourseModal = ({ modalIsOpen, closeModal }) => {
         >
           <Form className={styles.form}>
             <label className={`${styles.label}`} htmlFor="name">
-              <Field
-                id={"name"}
-                type={"text"}
-                name={"name"}
+              <input
+                type="text"
                 className={styles.input}
-                placeholder={"Full Name"}
+                name="text"
+                id="name"
+                placeholder="Full Name"
               />
               <ErrorMessage name="name" component={"span"} />
             </label>
             <label className={`${styles.label}`} htmlFor="email">
-              <Field
-                id="email"
-                type={"email"}
-                name={"email"}
+              <input
+                type="email"
                 className={styles.input}
-                placeholder={"E-mail"}
+                name="email"
+                id="email"
+                placeholder="E-mail"
               />
+
               <ErrorMessage name="email" component={"span"} />
             </label>
             <label
               className={`${styles.phoneLabel} ${styles.label}`}
               htmlFor="phone"
             >
-              <Field
+              <input
+                type="tel"
+                name="phone"
                 id="phone"
-                type={"tel"}
-                name={"phone"}
                 className={`${styles.input} ${styles.phoneInput}`}
                 placeholder={"Phone Number*"}
                 step={"any"}
@@ -95,3 +96,32 @@ const JoinTheCourseModal = ({ modalIsOpen, closeModal }) => {
 };
 
 export default JoinTheCourseModal;
+
+// <Field
+//   id={"name"}
+//   type={"text"}
+//   name={"name"}
+//   className={styles.input}
+//   placeholder={"Full Name"}
+// />;
+
+// <Field
+//   id="email"
+//   type={"email"}
+//   name={"email"}
+//   className={styles.input}
+//   placeholder={"E-mail"}
+// />;
+
+// <Field
+//   id="phone"
+//   type={"tel"}
+//   name={"phone"}
+//   className={`${styles.input} ${styles.phoneInput}`}
+//   placeholder={"Phone Number*"}
+//   step={"any"}
+//   inputMode="numeric"
+//   min="0"
+//   pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+//   autoComplete={"off"}
+// />;
