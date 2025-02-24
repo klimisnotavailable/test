@@ -15,6 +15,10 @@
 
 .label {
   display: block;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .input {
@@ -32,10 +36,6 @@
   font-weight: 600;
   line-height: 0;
   color: black;
-
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
 .input::placeholder {

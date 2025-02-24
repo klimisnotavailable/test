@@ -80,6 +80,7 @@
 
   stroke: currentColor;
   fill: var(--text-dark);
+  outline: none;
 }
 
 .button:hover .buttonText {
