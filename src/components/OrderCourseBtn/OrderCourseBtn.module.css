@@ -12,6 +12,7 @@
   transition: background-color ease-in-out 250ms;
 
   background-color: transparent;
+  color: var(--text-dark);
 
   border: 1px solid #000;
   border-image: radial-gradient(

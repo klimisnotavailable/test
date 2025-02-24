@@ -3,6 +3,7 @@
   padding: 20px;
   clip-path: polygon(0% 0%, 80% 0%, 91% 8%, 100% 8%, 100% 100%, 0% 100%);
   background-color: white;
+  outline: none;
 }
 
 .formTitle {
