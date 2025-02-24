@@ -75,6 +75,10 @@
     color: var(--text-light);
   }
 
+  .totalItems {
+    color: rgba(255, 255, 255, 0.33);
+  }
+
   .itemIcon {
     fill: var(--text-light);
   }
