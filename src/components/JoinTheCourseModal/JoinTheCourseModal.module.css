@@ -15,10 +15,6 @@
 
 .label {
   display: block;
-
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
 .input {
@@ -28,6 +24,7 @@
 
   border: none;
   border-bottom: 1px solid #000000;
+  background-color: transparent;
 
   outline: none;
 
@@ -36,9 +33,6 @@
   font-weight: 600;
   line-height: 0;
   color: black;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
 }
 
 .input::placeholder {
