@@ -31,6 +31,8 @@
 
 @media screen and (min-width: 1440px) {
   .section {
+    width: 1339px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -40,7 +42,6 @@
   .sectionTitle {
     width: 432px;
     margin-left: 0;
-    padding-left: 78px;
 
     font-size: 100px;
     text-align: left;
