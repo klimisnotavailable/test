@@ -36,7 +36,7 @@
   font-weight: 600;
   line-height: 0;
   color: black;
-  -webkit-appearance: none;
+  appearance: none;
 }
 
 .input::placeholder {
