@@ -35,10 +35,25 @@
   font-style: normal;
 }
 
-input[type="text"],
-input[type="submit"],
-input[type="tel"],
-input[type="email"] textarea {
+input,
+textarea,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+button {
   -webkit-appearance: none;
 }
 
