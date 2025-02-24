@@ -22,8 +22,12 @@
   padding-top: 23px;
   padding-bottom: 23px;
 
-  border: none;
-  border-bottom: 1px solid #000000;
+  border: none !important;
+  border-bottom: 1px solid #000000 !important;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-left-color: transparent;
+
   background-color: transparent;
 
   outline: none;
