@@ -37,6 +37,8 @@
   line-height: 0;
   color: black;
   appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 .input::placeholder {
