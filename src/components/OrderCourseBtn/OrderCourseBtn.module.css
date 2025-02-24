@@ -82,6 +82,7 @@
   fill: var(--text-dark);
   outline: none;
   user-select: none;
+  -webkit-appearance: none;
 }
 
 .button:hover .buttonText {
