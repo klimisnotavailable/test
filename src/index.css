@@ -38,26 +38,23 @@
 input,
 textarea,
 select {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  border: none;
-  outline: none;
-  background: transparent;
-  box-shadow: none;
-}
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
 
-input:focus,
-textarea:focus,
-button:focus {
-  outline: none;
-  box-shadow: none;
-}
+  border: none !important;
+  outline: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
 
-button {
-  -webkit-appearance: none;
-}
+  border-radius: 0 !important;
 
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+
+  -webkit-text-fill-color: inherit !important;
+  caret-color: inherit !important;
+}
 :root {
   --text-dark: rgb(0, 0, 0);
   --text-light: rgb(255, 255, 255);
