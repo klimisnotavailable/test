@@ -1,0 +1,91 @@
+.formCont {
+  position: relative;
+  padding: 20px;
+  clip-path: polygon(0% 0%, 80% 0%, 91% 8%, 100% 8%, 100% 100%, 0% 100%);
+  background-color: white;
+}
+
+.formTitle {
+  font-family: "2MASS J1808", sans-serif;
+  font-size: 20px;
+
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+}
+
+.input {
+  width: 100%;
+  padding-top: 23px;
+  padding-bottom: 23px;
+
+  border: none;
+  border-bottom: 1px solid #000000;
+
+  outline: none;
+
+  font-family: "Mona Sans", serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 0;
+  color: black;
+}
+
+.input::placeholder {
+  padding-left: 0px;
+  padding-right: 0;
+
+  font-family: "Mona Sans", serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 0;
+  color: black;
+}
+
+.phoneLabel {
+  margin-bottom: 31.7px;
+}
+
+.orderCourseBtn {
+  width: 278px;
+  height: 90px;
+  margin-bottom: 31.7px;
+}
+
+.arrow {
+  fill: black;
+}
+
+.arrowCont {
+  background-color: var(--bg-primary);
+}
+
+.privacyPolicy {
+  font-size: 13px;
+  font-weight: 500;
+
+  color: rgb(162, 162, 162);
+}
+
+.privacyPolicyAccent {
+  color: var(--bg-primary);
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 1024px) {
+  .formCont {
+    width: 307px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .formCont {
+    width: 432px;
+    padding: 25px;
+  }
+
+  .input {
+  }
+}

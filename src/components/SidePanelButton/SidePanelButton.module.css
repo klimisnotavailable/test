@@ -1,0 +1,92 @@
+.button {
+  width: 111px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  text-align: left;
+}
+
+.buttonText {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  transform: scaleX(0.55);
+
+  color: white;
+}
+
+.menuBurger {
+  position: relative;
+  width: 24px;
+  height: 24px;
+
+  transition: transform ease-in-out 500ms;
+}
+
+.burgerIcon {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+}
+
+.burgerIcon:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+
+.burgerIcon:nth-child(2) {
+  top: 0;
+  right: 0;
+}
+
+.burgerIcon:nth-child(3) {
+  bottom: 0;
+  right: 0;
+}
+
+.burgerIcon:nth-child(4) {
+  bottom: 0;
+  left: 0;
+}
+
+.button:hover .menuBurger {
+  transform: rotateZ(360deg);
+}
+
+@media screen and (min-width: 768px) {
+  .buttonText {
+    transform: scaleX(0.65);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .button {
+    width: 200px;
+    height: 32px;
+  }
+
+  .buttonText {
+    font-size: 36px;
+  }
+
+  .menuBurger {
+    width: 32px;
+    height: 32px;
+  }
+
+  .burgerIcon {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .buttonText {
+    transform: scaleX(0.55);
+
+    color: black;
+  }
+}

@@ -1,0 +1,83 @@
+.heroSection {
+  padding-top: 51px;
+  padding-bottom: 80px;
+  text-align: left;
+
+  background-image: url(../../../public/shared/bg`s/hero-bg.jpg);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+.arrow {
+  fill: var(--text-dark);
+  stroke: var(--text-dark);
+}
+
+.arrowCont {
+  background-color: var(--bg-primary);
+}
+
+@media screen and (min-resolution: 192dpi) {
+  .heroSection {
+    background-image: url(../../../public/shared/bg`s/hero-bg@2x.jpg);
+    background-size: 375px auto;
+  }
+}
+
+.subtitle {
+  width: 203px;
+  font-family: "Druk Cyr";
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  transform: scaleX(0.9);
+  transform-origin: left;
+}
+
+.pageTitle {
+  width: 245px;
+  margin-bottom: 51px;
+
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  transform: scaleX(0.9);
+  transform-origin: left;
+}
+
+@media screen and (min-width: 768px) {
+  .heroSection {
+    background-image: url(../../../public/shared/bg`s/hero-bg-desktop.jpg);
+    background-position: bottom -110px center;
+    background-size: 778px 768px;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .heroSection {
+    background-image: url(../../../public/shared/bg`s/hero-bg-desktop.jpg);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .heroSection {
+    background-image: none;
+    padding-bottom: 60px;
+  }
+
+  .pageTitle {
+    width: 683px;
+    font-size: 165px;
+    margin-bottom: 41px;
+  }
+
+  .subtitle {
+    width: 370px;
+    font-size: 49px;
+  }
+}

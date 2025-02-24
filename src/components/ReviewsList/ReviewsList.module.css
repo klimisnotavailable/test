@@ -1,0 +1,97 @@
+.navBtnTablet {
+  display: none;
+  visibility: hidden;
+}
+
+.listContainer {
+  position: relative;
+}
+
+.list {
+  padding-top: 20px;
+  margin: 0 auto;
+  margin-bottom: 61px;
+
+  display: flex;
+  justify-content: start;
+}
+
+.item {
+  box-sizing: border-box;
+
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiperButtonsMobile {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.button {
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background-color ease-in-out 250ms;
+
+  background-color: var(--bg-primary);
+}
+
+.buttonDark {
+  background-color: black;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+.arrowPrev {
+  transform: rotateZ(180deg);
+}
+
+@media screen and (min-width: 768px) {
+  .listContainer {
+    max-width: 768px;
+  }
+
+  .swiperButtonsMobile {
+    display: none;
+    visibility: hidden;
+  }
+
+  .navBtnTablet {
+    position: absolute;
+    z-index: 10;
+
+    display: flex;
+    visibility: visible;
+
+    background-color: black;
+    fill: var(--bg-primary);
+  }
+
+  .prevNavBtnTablet {
+    left: 32px;
+    top: 50%;
+
+    transform: translate(0%, -50%);
+  }
+
+  .nextNavBtnTablet {
+    right: 32px;
+    top: 50%;
+
+    transform: translate(0, -50%);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+}

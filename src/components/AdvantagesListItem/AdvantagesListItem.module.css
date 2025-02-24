@@ -1,0 +1,143 @@
+.item {
+  box-sizing: border-box;
+  width: auto;
+  padding-top: 39px;
+  padding-bottom: 39px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  position: relative;
+
+  border-radius: 22px;
+  transition: background-color ease-in-out 250ms;
+
+  background-color: white;
+}
+
+.item:hover,
+.item:active {
+  background-color: var(--bg-primary);
+}
+
+.itemIndex {
+  margin-bottom: 31px;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.totalItems {
+  color: rgba(0, 0, 0, 0.33);
+}
+
+.itemTitle {
+  margin-bottom: 32px;
+
+  font-size: 44px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.itemText {
+  font-weight: 600;
+  line-height: 1.4;
+  font-size: 14px;
+}
+
+.itemIcon {
+  width: 44px;
+  max-height: 55px;
+
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+.itemIconDesktop {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .item {
+    width: 295px;
+    padding: 30px 20px 30px 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .item {
+    width: 330px;
+    padding: 30px;
+
+    background-color: transparent;
+    border: 4px solid #ffffff;
+
+    color: var(--text-light);
+  }
+
+  .itemIcon {
+    fill: var(--text-light);
+  }
+
+  .itemIndex {
+    margin-bottom: 31px;
+  }
+
+  .itemTitle {
+    margin-bottom: 12px;
+    font-size: 33px;
+  }
+
+  .itemText {
+    font-size: 10px;
+  }
+
+  .item:nth-child(2) {
+    position: relative;
+    right: 4px;
+  }
+
+  .item:nth-child(3) {
+    position: relative;
+    right: 12px;
+  }
+
+  .item:nth-child(4) {
+    position: relative;
+    right: 20px;
+  }
+
+  .item:hover,
+  .item:active {
+    color: var(--text-dark);
+    background-color: white;
+  }
+
+  .item:hover .itemIcon,
+  .item:active .itemIcon {
+    fill: var(--text-dark);
+    stroke-width: 1px;
+  }
+
+  .item:first-child {
+    width: 335.5px;
+    grid-row: span 2 / span 2;
+
+    color: var(--text-dark);
+    background-color: white;
+  }
+
+  .item:first-child .itemIconDesktop {
+    display: block;
+    width: 210px;
+    height: 210px;
+  }
+
+  .item:first-child .itemText {
+    margin-bottom: 28px;
+  }
+
+  .item:first-child .itemIcon {
+    display: none;
+  }
+}

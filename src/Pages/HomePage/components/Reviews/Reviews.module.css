@@ -1,0 +1,54 @@
+.section {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.sectionTitle {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 44px;
+
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1;
+
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.listContainer {
+  margin-bottom: 43px;
+}
+
+.orderCourseBtn {
+  margin: 0 auto;
+}
+
+.arrowCont {
+  background-color: var(--bg-primary);
+}
+
+@media screen and (min-width: 1440px) {
+  .section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 128px;
+  }
+
+  .sectionTitle {
+    width: 432px;
+    margin-left: 0;
+    padding-left: 78px;
+
+    font-size: 100px;
+    text-align: left;
+  }
+
+  .orderCourseBtn {
+    margin: 0;
+    margin-right: auto;
+    padding-left: 78px;
+  }
+}

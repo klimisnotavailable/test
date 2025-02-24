@@ -1,0 +1,17 @@
+.item {
+  text-align: center;
+}
+
+.link {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  color: var(--text-dark);
+}
+
+@media screen and (min-width: 1440px) {
+  .link {
+    font-size: 40px;
+  }
+}

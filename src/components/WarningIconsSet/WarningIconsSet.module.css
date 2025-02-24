@@ -1,0 +1,41 @@
+.iconsCont {
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  width: 12px;
+  height: 10px;
+  fill: white;
+}
+
+.iconGlobe {
+  width: 21px;
+}
+
+@media screen and (min-width: 375px) {
+  .icon {
+    height: 12px;
+  }
+
+  .iconsCont {
+    gap: 12px;
+  }
+
+  .iconsSet {
+    display: flex;
+    gap: 5px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .icon {
+    height: 15px;
+    width: 15px;
+  }
+
+  .iconGlobe {
+    width: 20px;
+    height: 18px;
+  }
+}

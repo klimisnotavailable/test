@@ -1,0 +1,77 @@
+.sloganCont {
+  width: 183px;
+
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 51px;
+}
+
+.star {
+  width: 52px;
+  height: 20px;
+  fill: black;
+}
+
+.slogan {
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.globe {
+  width: 39px;
+  height: 18px;
+  stroke: currentColor;
+}
+
+@media screen and (min-width: 375px) {
+  .sloganCont {
+    width: 214px;
+  }
+
+  .slogan {
+    width: 121px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sloganCont {
+    width: 439px;
+  }
+
+  .star {
+    width: 100px;
+    height: 40px;
+  }
+
+  .slogan {
+    width: 248px;
+
+    font-size: 14px;
+  }
+
+  .globe {
+    width: 81px;
+    height: 35px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sloganCont {
+    width: 444px;
+  }
+
+  .star {
+    width: 108px;
+    height: 40px;
+  }
+
+  .slogan {
+    width: 251px;
+    height: 42px;
+
+    font-size: 14px;
+  }
+}

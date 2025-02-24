@@ -1,0 +1,132 @@
+.button {
+  display: flex;
+  align-items: center;
+}
+
+.buttonText {
+  position: relative;
+  display: inline-block;
+  padding: 25px;
+  margin-right: 3px;
+
+  transition: background-color ease-in-out 250ms;
+
+  background-color: transparent;
+
+  border: 1px solid #000;
+  border-image: radial-gradient(
+      circle at center,
+      rgb(255, 255, 255) 0%,
+      rgba(21, 21, 21, 0.1) 25%,
+      rgb(255, 255, 255) 50%,
+      rgba(21, 21, 21, 0.1) 75%,
+      rgb(255, 255, 255) 100%
+    )
+    1;
+
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.corner {
+  position: absolute;
+
+  width: 10px;
+  height: 10px;
+
+  transition: all ease-in-out 250ms;
+
+  fill: var(--text-dark);
+}
+
+.topLeft {
+  top: -1px;
+  left: -1px;
+}
+
+.bottomLeft {
+  bottom: -1px;
+  left: -1px;
+
+  transform: rotateZ(-90deg);
+}
+
+.topRight {
+  top: -1px;
+  right: -1px;
+
+  transform: rotateZ(90deg);
+}
+
+.bottomRight {
+  bottom: -1px;
+  right: -1px;
+
+  transform: rotateZ(180deg);
+}
+
+.arrowCont {
+  display: inline-block;
+  padding: 27px;
+}
+
+.arrow {
+  width: 13px;
+  height: 13px;
+
+  transition: transform ease-in-out 250ms;
+
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.button:hover .buttonText {
+  background-color: var(--bg-primary);
+}
+
+.button:hover .arrow {
+  transform: rotateZ(45deg);
+}
+
+.button:hover .topLeft {
+  top: 6px;
+  left: 6px;
+}
+
+.button:hover .topRight {
+  top: 6px;
+  right: 6px;
+}
+
+.button:hover .bottomLeft {
+  bottom: 6px;
+  left: 6px;
+}
+
+.button:hover .bottomRight {
+  bottom: 6px;
+  right: 6px;
+}
+
+@media screen and (min-width: 1440px) {
+  .buttonText {
+    padding: 36px 58px 36px 58px;
+
+    font-size: 22px;
+  }
+
+  .corner {
+    width: 17px;
+    height: 17px;
+  }
+
+  .arrowCont {
+    padding: 40px;
+  }
+
+  .arrow {
+    width: 20px;
+    height: 20px;
+  }
+}

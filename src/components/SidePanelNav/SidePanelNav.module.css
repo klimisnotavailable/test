@@ -1,0 +1,29 @@
+.navigation {
+  margin-bottom: 60px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .navigation {
+    margin-bottom: 0;
+  }
+
+  .list {
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .navigation {
+    padding-left: 162px;
+  }
+
+  .list {
+    gap: 33px;
+  }
+}

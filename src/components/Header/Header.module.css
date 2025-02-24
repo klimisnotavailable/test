@@ -1,0 +1,65 @@
+.header {
+  min-width: 320px;
+  background-color: #000000;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+.companyLogo {
+  fill: white;
+  width: 27px;
+  height: 32px;
+}
+
+@media screen and (min-width: 375px) {
+  .header {
+    min-width: none;
+  }
+
+  .headerContainer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    width: 768px;
+  }
+
+  .companyLogo {
+    width: 30px;
+    height: 35px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    width: 1024px;
+  }
+
+  .companyLogo {
+    width: 60px;
+    height: 69px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    width: 1440px;
+    background-color: transparent;
+  }
+
+  .companyLogo {
+    fill: black;
+    width: 65px;
+    height: 77px;
+  }
+}
