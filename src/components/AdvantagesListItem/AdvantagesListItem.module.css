@@ -79,6 +79,10 @@
     color: rgba(255, 255, 255, 0.33);
   }
 
+  .item:hover .totalItems {
+    color: rgba(0, 0, 0, 0.33);
+  }
+
   .itemIcon {
     fill: var(--text-light);
   }
@@ -120,7 +124,6 @@
   .item:hover .itemIcon,
   .item:active .itemIcon {
     fill: var(--text-dark);
-    stroke-width: 1px;
   }
 
   .item:first-child {
@@ -143,5 +146,9 @@
 
   .item:first-child .itemIcon {
     display: none;
+  }
+
+  .item:first-child .totalItems {
+    color: rgba(0, 0, 0, 0.33);
   }
 }
