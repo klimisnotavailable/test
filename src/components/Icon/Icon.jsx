@@ -1,7 +1,9 @@
+import icons from "../../img/icons/icons.svg";
+
 const Icon = ({ id, style, width, height }) => {
   return (
     <svg className={style} width={width} height={height}>
-      <use href={`../../img/icons/icons#svg#${id}`} />
+      <use href={`${icons}#${id}`} />
     </svg>
   );
 };
