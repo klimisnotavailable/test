@@ -1,7 +1,7 @@
 import AdvantagesList from "../../../../components/AdvantagesList/AdvantagesList";
 import styles from "./Advantages.module.css";
-import bgDesktop from "../../../../../public/shared/bg`s/hero-bg-desktop.jpg";
-import bgDesktop2x from "../../../../../public/shared/bg`s/hero-bg-desktop@2x.jpg";
+import bgDesktop from "../../../../img/shared/bg`s/hero-bg-desktop.jpg";
+import bgDesktop2x from "../../../../img/shared/bg`s/hero-bg-desktop@2x.jpg";
 
 const Advantages = () => {
   return (

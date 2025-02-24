@@ -3,7 +3,7 @@
   padding-bottom: 80px;
   text-align: left;
 
-  background-image: url(../../../public/shared/bg`s/hero-bg.jpg);
+  background-image: url(../../../../img/shared/bg`s/hero-bg.jpg);
   background-position: bottom center;
   background-repeat: no-repeat;
 }
@@ -19,7 +19,7 @@
 
 @media screen and (min-resolution: 192dpi) {
   .heroSection {
-    background-image: url(../../../public/shared/bg`s/hero-bg@2x.jpg);
+    background-image: url(../../../../img/shared/bg`s/hero-bg@2x.jpg);
     background-size: 375px auto;
   }
 }
@@ -51,7 +51,7 @@
 
 @media screen and (min-width: 768px) {
   .heroSection {
-    background-image: url(../../../public/shared/bg`s/hero-bg-desktop.jpg);
+    background-image: url(../../../../img/shared/bg`s/hero-bg-desktop.jpg);
     background-position: bottom -110px center;
     background-size: 778px 768px;
     background-repeat: no-repeat;
@@ -60,7 +60,7 @@
 
 @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .heroSection {
-    background-image: url(../../../public/shared/bg`s/hero-bg-desktop.jpg);
+    background-image: url(../../../../img/shared/bg`s/hero-bg-desktop@2x.jpg);
   }
 }
 

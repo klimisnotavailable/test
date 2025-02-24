@@ -1,4 +1,4 @@
-import photo from "../../../public/shared/review/reviewer.png";
+import photo from "../../img/shared/review/reviewer.png";
 
 const data = [
   {
