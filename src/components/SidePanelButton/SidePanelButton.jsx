@@ -8,7 +8,7 @@ const MenuButton = ({ openMenu }) => {
       onClick={() => openMenu()}
       type="button"
     >
-      <span className={`${styles.buttonText}`}> menu</span>
+      <span className={`${styles.buttonText}`}>MENU</span>
       <span className={`${styles.menuBurger}`}>
         <Icon style={styles.burgerIcon} id={"dot"} width={6} height={6} />
         <Icon style={styles.burgerIcon} id={"dot"} width={6} height={6} />

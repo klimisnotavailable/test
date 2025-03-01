@@ -1,5 +1,4 @@
 import Hero from "./components/Hero/Hero";
-import Advantages from "./components/Advantages/Advantages";
 import SidePanel from "./components/SidePanel/SidePanel";
 import Reviews from "./components/Reviews/Reviews";
 import JoinTheCourseModal from "../../components/JoinTheCourseModal/JoinTheCourseModal";
@@ -15,7 +14,6 @@ const HomePage = ({
   return (
     <>
       <Hero openMenu={openMenu} openModal={openModal} />
-      <Advantages />
       <Reviews openModal={openModal} />
       <SidePanel
         menuIsOpen={menuIsOpen}

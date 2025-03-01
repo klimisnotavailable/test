@@ -1,8 +1,3 @@
-.navBtnTablet {
-  display: none;
-  visibility: hidden;
-}
-
 .listContainer {
   position: relative;
 }
@@ -55,6 +50,11 @@
 
 .arrowPrev {
   transform: rotateZ(180deg);
+}
+
+.navBtnTablet {
+  display: none;
+  visibility: hidden;
 }
 
 @media screen and (min-width: 768px) {

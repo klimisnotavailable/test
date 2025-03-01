@@ -1,6 +1,10 @@
 .header {
-  min-width: 320px;
+  width: 100%;
   background-color: #000000;
+  position: fixed;
+  z-index: 100;
+
+  transition: background-color ease-in-out 250ms;
 }
 
 .headerContainer {
@@ -19,10 +23,6 @@
 }
 
 @media screen and (min-width: 375px) {
-  .header {
-    min-width: 0px;
-  }
-
   .headerContainer {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -45,11 +45,22 @@
     width: 60px;
     height: 69px;
   }
+
+  .scrolled {
+    background-color: black;
+  }
+
+  .scrolled button span {
+    color: white;
+  }
+
+  .scrolled .companyLogo {
+    fill: white;
+  }
 }
 
 @media screen and (min-width: 1440px) {
   .header {
-    width: 1440px;
     background-color: transparent;
   }
 
@@ -57,5 +68,9 @@
     fill: black;
     width: 65px;
     height: 77px;
+  }
+
+  .scrolled {
+    background-color: black;
   }
 }

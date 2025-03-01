@@ -1,5 +1,23 @@
 .item {
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.item::before {
+  content: " ";
+  position: absolute;
+  bottom: 0px;
+  display: block;
+  height: 3.2px;
+  width: 100%;
+  background-color: black;
+  transition: transform ease-in-out 250ms;
+  transform: translateX(-100%);
+}
+
+.item:hover::before {
+  transform: translateX(0%);
 }
 
 .link {

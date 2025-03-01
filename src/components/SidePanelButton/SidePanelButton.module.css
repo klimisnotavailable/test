@@ -1,19 +1,14 @@
 .button {
-  width: 111px;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-
-  text-align: left;
+  align-items: flex-end;
+  gap: 10px;
 }
 
 .buttonText {
+  font-family: "Druk Cyr", sans-serif;
   font-size: 26px;
   font-weight: 700;
   line-height: 0.9;
-  letter-spacing: -2px;
-  text-transform: uppercase;
-  transform: scaleX(0.55);
 
   color: white;
 }
@@ -56,16 +51,9 @@
   transform: rotateZ(360deg);
 }
 
-@media screen and (min-width: 768px) {
-  .buttonText {
-    transform: scaleX(0.65);
-  }
-}
-
 @media screen and (min-width: 1024px) {
   .button {
-    width: 200px;
-    height: 32px;
+    gap: 18px;
   }
 
   .buttonText {
@@ -85,8 +73,6 @@
 
 @media screen and (min-width: 1440px) {
   .buttonText {
-    transform: scaleX(0.55);
-
     color: black;
   }
 }
