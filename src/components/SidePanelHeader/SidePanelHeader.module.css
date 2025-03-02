@@ -1,9 +1,12 @@
+.header {
+  padding-top: 45px;
+  padding-bottom: 48px;
+}
+
 .headerCont {
   display: flex;
   align-items: center;
   gap: 30px;
-
-  margin-bottom: 48px;
 }
 
 .companyLogo {
