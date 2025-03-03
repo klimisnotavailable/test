@@ -1,10 +1,15 @@
 import styles from "./ReviewsListItem.module.css";
 import Icon from "../Icon/Icon";
+import { useSwiper, useSwiperSlide } from "swiper/react";
 
 const ReviewsListItem = ({ data }) => {
   const { review, reviewer, photo } = data;
+  // const swiper = useSwiper();
+  const slide = useSwiperSlide();
   return (
-    <div className={styles.itemCont}>
+    <div
+      className={`${styles.itemCont} ${slide.isActive ? "" : styles.notActive}`}
+    >
       <p className={styles.review}>{review}</p>
       <p className={`${styles.reviewer}`}>
         <span className={styles.imgContainer}>
@@ -16,9 +21,6 @@ const ReviewsListItem = ({ data }) => {
         <Icon style={styles.icon} id={"quote"} />
         <Icon style={styles.icon} id={"quote"} />
       </div>
-      <div className={`${styles.bgItem} ${styles.bgItem1}`}></div>
-      <div className={`${styles.bgItem} ${styles.bgItem2}`}></div>
-      <div className={`${styles.bgItem} ${styles.bgItem3}`}></div>
     </div>
   );
 };

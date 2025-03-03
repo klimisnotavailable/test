@@ -1,23 +1,12 @@
-.listContainer {
+.swiperCont {
   position: relative;
 }
 
-.list {
-  padding-top: 20px;
-  margin: 0 auto;
+.swiper {
+  width: 250px;
+  height: 420px;
+
   margin-bottom: 61px;
-
-  display: flex;
-  justify-content: start;
-}
-
-.item {
-  box-sizing: border-box;
-
-  display: flex !important;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .swiperButtonsMobile {
@@ -57,9 +46,26 @@
   visibility: hidden;
 }
 
+.orderCourseBtn {
+  width: 100%;
+  margin-top: 41px;
+  display: flex;
+  justify-content: center;
+}
+
+.joinTheCourseIconCont {
+  background-color: var(--bg-primary);
+}
+
+@media screen and (min-width: 375px) {
+  .swiper {
+    width: 280px;
+  }
+}
+
 @media screen and (min-width: 768px) {
-  .listContainer {
-    max-width: 768px;
+  .swiper {
+    margin-bottom: 0;
   }
 
   .swiperButtonsMobile {
@@ -94,4 +100,25 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .nextNavBtnTablet {
+    right: 0;
+  }
+
+  .prevNavBtnTablet {
+    left: 0;
+  }
+
+  .swiperCont {
+    width: 708px;
+    padding-top: 20px;
+  }
+
+  .swiper {
+    width: 448px;
+    height: auto;
+  }
+
+  .orderCourseBtn {
+    display: none;
+  }
 }

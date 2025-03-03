@@ -1,43 +1,42 @@
-import styles from "./ReviewsList.module.css";
+import { SwiperSlide, Swiper } from "swiper/react";
+import { EffectCards, Navigation } from "swiper/modules";
 import ReviewsListItem from "../ReviewsListItem/ReviewsListItem";
 import Icon from "../Icon/Icon";
-import Swiper from "swiper";
 import "swiper/css";
-import { Navigation } from "swiper/modules";
-import { useEffect } from "react";
+import "swiper/css/effect-cards";
+import styles from "./ReviewsList.module.css";
 import data from "./data";
+import OrderCourseBtn from "../OrderCourseBtn/OrderCourseBtn";
 
 const ReviewsList = ({ listContainer }) => {
-  useEffect(() => {
-    const swiper = new Swiper(".swiper", {
-      modules: [Navigation],
-
-      direction: "horizontal",
-      loop: true,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  }, []);
-
   return (
-    <div className={`swiper ${styles.listContainer} ${listContainer}`}>
+    <div className={`${styles.swiperCont}`}>
       <button
         className={`swiper-button-prev ${styles.button} ${styles.navBtnTablet} ${styles.prevNavBtnTablet}`}
       >
         <Icon style={`${styles.icon} ${styles.arrowPrev}`} id={"swiperArrow"} />
       </button>
 
-      <ul className={`swiper-wrapper ${styles.list}`}>
+      <Swiper
+        effect={"cards"}
+        grabCursor={false}
+        modules={[EffectCards, Navigation]}
+        navigation={{
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        }}
+        id="swiper"
+        className={styles.swiper}
+      >
         {data.map((item, idx) => {
           return (
-            <li key={idx} className={`swiper-slide ${styles.item}`}>
+            <SwiperSlide key={idx}>
               <ReviewsListItem data={item} />
-            </li>
+            </SwiperSlide>
           );
         })}
-      </ul>
+      </Swiper>
+
       <button
         className={`swiper-button-next ${styles.button} ${styles.navBtnTablet} ${styles.nextNavBtnTablet}`}
       >
@@ -55,6 +54,13 @@ const ReviewsList = ({ listContainer }) => {
           <Icon style={`${styles.icon}`} id={"swiperArrow"} />
         </button>
       </div>
+
+      <OrderCourseBtn
+        style={styles.orderCourseBtn}
+        arrowCont={styles.joinTheCourseIconCont}
+      >
+        Join the course
+      </OrderCourseBtn>
     </div>
   );
 };

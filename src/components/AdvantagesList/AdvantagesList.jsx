@@ -2,6 +2,7 @@ import data from "./data";
 import AdvantagesListItem from "../AdvantagesListItem/AdvantagesListItem";
 import styles from "./AdvantagesList.module.css";
 import Warning from "../Warning/Warning";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 const AdvantagesList = () => {
   return (

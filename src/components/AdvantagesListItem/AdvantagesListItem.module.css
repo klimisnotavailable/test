@@ -14,11 +14,6 @@
   background-color: white;
 }
 
-.item:hover,
-.item:active {
-  background-color: var(--bg-primary);
-}
-
 .itemIndex {
   margin-bottom: 31px;
 
