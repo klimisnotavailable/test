@@ -1,6 +1,7 @@
 .section {
   padding-top: 60px;
   padding-bottom: 71px;
+  overflow: hidden;
 }
 
 .sectionTitle {
