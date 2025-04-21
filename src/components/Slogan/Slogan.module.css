@@ -1,77 +1,82 @@
 .sloganCont {
-  width: 183px;
+  width: 57.1vw;
 
   display: flex;
   align-items: center;
 
-  margin-bottom: 51px;
+  margin-bottom: 13.6vw;
 }
 
 .star {
-  width: 52px;
-  height: 20px;
+  width: 13.9vw;
+  height: 5.3vw;
   fill: black;
 }
 
 .slogan {
-  font-size: 9px;
+  font-size: 2.4vw;
   font-weight: 600;
   line-height: 1.1;
   text-align: center;
 }
 
 .globe {
-  width: 39px;
-  height: 18px;
+  width: 10.4vw;
+  height: 4.8vw;
   stroke: currentColor;
 }
 
 @media screen and (min-width: 375px) {
-  .sloganCont {
-    width: 214px;
-  }
-
   .slogan {
-    width: 121px;
+    width: 32.3vw;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .sloganCont {
-    width: 439px;
-  }
-
   .star {
-    width: 100px;
-    height: 40px;
+    width: 13vw;
   }
 
   .slogan {
-    width: 248px;
-
-    font-size: 14px;
+    font-size: 1.8vw;
   }
 
   .globe {
-    width: 81px;
-    height: 35px;
+    height: 4.6vw;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .sloganCont {
-    width: 444px;
-  }
-
   .star {
-    width: 108px;
-    height: 40px;
+    width: 10.5vw;
+    height: 3.9vw;
   }
 
   .slogan {
-    width: 251px;
-    height: 42px;
+    width: 24.5vw;
+    height: 4.1vw;
+  }
+}
 
-    font-size: 14px;
+@media screen and (min-width: 1440px) {
+  .sloganCont {
+    height: 2.2vw;
+    margin-bottom: 2.7vw;
+    align-items: normal;
+  }
+
+  .slogan {
+    width: 13.1vw;
+    font-size: 1vw;
+  }
+
+  .star {
+    width: 5.7vw;
+    height: 2.1vw;
+  }
+
+  .globe {
+    width: 4.2vw;
+    height: 2.1vw;
   }
 }

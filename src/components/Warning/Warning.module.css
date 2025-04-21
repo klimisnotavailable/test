@@ -1,25 +1,26 @@
 .warningCont {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 27px;
+  gap: 7.2vw;
 
-  padding-top: 79px;
-  padding-bottom: 79px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 21.1vw;
+  padding-bottom: 21.1vw;
+  padding-left: 5.3vw;
+  padding-right: 5.3vw;
 
   transition: background-color ease-in-out 250ms;
 
   color: var(--text-light);
   background-color: black;
 
-  border-radius: 22px;
+  border-radius: 5.9vw;
 }
 
 .warning {
-  width: 196px;
-  font-size: 10px;
+  width: 69.3vw;
+  font-size: 2.7vw;
   font-weight: 600;
   text-align: center;
   color: var(--text-light);
@@ -27,19 +28,25 @@
 
 @media screen and (min-width: 375px) {
   .warning {
-    width: 260px;
-    font-size: 14px;
+    font-size: 3.7vw;
   }
 }
 
 @media screen and (min-width: 768px) {
   .warningCont {
+    padding-top: 10.3vw;
+    padding-bottom: 10.3vw;
+
     grid-column: span 2 / span 2;
   }
+
+  .warning {
+    font-size: 1.8vw;
+  }
 }
+
 @media screen and (min-width: 1024px) {
   .warningCont {
-    flex-direction: row;
     justify-content: center;
   }
 }
@@ -49,13 +56,31 @@
     grid-column: span 3 / span 3;
     grid-column-start: 2;
 
-    width: 936px;
+    flex-direction: row;
+
+    width: 68.3vw;
+
+    padding-top: 5.4vw;
+    padding-bottom: 5.4vw;
+    padding-right: 4.1vw;
+    padding-left: 4.1vw;
+
+    gap: 0px;
+
     position: relative;
-    right: 4px;
-    bottom: 4px;
+    right: 0.3vw;
+    bottom: 0.3vw;
 
     background-color: transparent;
-    border: 4px solid #ffffff;
+    border: 0.3vw solid #ffffff;
+    border-radius: 1.5vw;
+  }
+
+  .warning {
+    width: 17.3vw;
+    padding-right: 2.7vw;
+    padding-left: 2.7vw;
+    font-size: 0.7vw;
   }
 
   .warningCont:hover {

@@ -1,23 +1,23 @@
 .item {
   box-sizing: border-box;
   width: auto;
-  padding-top: 39px;
-  padding-bottom: 39px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 10.4vw;
+  padding-bottom: 10.4vw;
+  padding-left: 5.3vw;
+  padding-right: 5.3vw;
 
   position: relative;
 
-  border-radius: 22px;
+  border-radius: 5.9vw;
   transition: background-color ease-in-out 250ms;
 
   background-color: white;
 }
 
 .itemIndex {
-  margin-bottom: 31px;
+  margin-bottom: 8.3vw;
 
-  font-size: 14px;
+  font-size: 3.7vw;
   font-weight: 700;
 }
 
@@ -26,9 +26,9 @@
 }
 
 .itemTitle {
-  margin-bottom: 32px;
+  margin-bottom: 8.5vw;
 
-  font-size: 44px;
+  font-size: 11.7vw;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -36,16 +36,16 @@
 .itemText {
   font-weight: 600;
   line-height: 1.4;
-  font-size: 14px;
+  font-size: 3.7vw;
 }
 
 .itemIcon {
-  width: 44px;
-  max-height: 55px;
+  width: 11.7vw;
+  max-height: 14.7vw;
 
   position: absolute;
-  top: 20px;
-  right: 30px;
+  top: 5.3vw;
+  right: 8vw;
 }
 
 .itemIconDesktop {
@@ -54,18 +54,46 @@
 
 @media screen and (min-width: 768px) {
   .item {
-    width: 295px;
-    padding: 30px 20px 30px 20px;
+    width: 43.6vw;
+    padding: 3.9vw 2.6vw 3.9vw 2.6vw;
+  }
+
+  .itemIndex {
+    margin-bottom: 4vw;
+
+    font-size: 1.8vw;
+  }
+
+  .itemTitle {
+    margin-bottom: 4.2vw;
+
+    font-size: 5.2vw;
+  }
+
+  .itemText {
+    font-size: 1.8vw;
+  }
+
+  .itemIcon {
+    width: 5.7vw;
+    max-height: 6.9vw;
+
+    top: 2.6vw;
+    right: 3.9vw;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .item {
-    width: 330px;
-    padding: 30px;
+    width: 22.9vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    padding-right: 2.2vw;
+    padding-left: 2.2vw;
 
     background-color: transparent;
-    border: 4px solid #ffffff;
+    border: 0.3vw solid #ffffff;
+    border-radius: 1.5vw;
 
     color: var(--text-light);
   }
@@ -79,35 +107,40 @@
   }
 
   .itemIcon {
+    width: 3.3vw;
+    max-height: 3.3vw;
+    top: 1.4vw;
+    right: 1.6vw;
     fill: var(--text-light);
   }
 
   .itemIndex {
-    margin-bottom: 31px;
+    margin-bottom: 2.1vw;
+    font-size: 0.7vw;
   }
 
   .itemTitle {
-    margin-bottom: 12px;
-    font-size: 33px;
+    margin-bottom: 0.6vw;
+    font-size: 2.3vw;
   }
 
   .itemText {
-    font-size: 10px;
+    font-size: 0.7vw;
   }
 
   .item:nth-child(2) {
     position: relative;
-    right: 4px;
+    right: 0.3vw;
   }
 
   .item:nth-child(3) {
     position: relative;
-    right: 12px;
+    right: 0.8vw;
   }
 
   .item:nth-child(4) {
     position: relative;
-    right: 20px;
+    right: 1.4vw;
   }
 
   .item:hover,
@@ -122,8 +155,10 @@
   }
 
   .item:first-child {
-    width: 335.5px;
     grid-row: span 2 / span 2;
+
+    width: 23.3vw;
+    height: 100%;
 
     color: var(--text-dark);
     background-color: white;
@@ -131,12 +166,12 @@
 
   .item:first-child .itemIconDesktop {
     display: block;
-    width: 210px;
-    height: 210px;
+    width: 10.9vw;
+    height: 10.9vw;
   }
 
   .item:first-child .itemText {
-    margin-bottom: 28px;
+    margin-bottom: 1.5vw;
   }
 
   .item:first-child .itemIcon {

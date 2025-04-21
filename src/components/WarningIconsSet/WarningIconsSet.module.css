@@ -1,41 +1,56 @@
 .iconsCont {
   display: flex;
-  gap: 10px;
+  gap: 2.7vw;
 }
 
 .icon {
-  width: 12px;
-  height: 10px;
+  width: 3.2vw;
+  height: 3.2vw;
   fill: white;
 }
 
 .iconGlobe {
-  width: 21px;
+  width: 5.6vw;
 }
 
 @media screen and (min-width: 375px) {
-  .icon {
-    height: 12px;
-  }
-
   .iconsCont {
-    gap: 12px;
+    gap: 3.2vw;
   }
 
   .iconsSet {
     display: flex;
-    gap: 5px;
+    gap: 1.3vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .iconsCont {
+    gap: 4vw;
+  }
+
+  .icon {
+    width: 3vw;
+    height: 3vw;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .icon {
-    height: 15px;
-    width: 15px;
+    height: 1vw;
+    width: 1vw;
   }
 
   .iconGlobe {
-    width: 20px;
-    height: 18px;
+    width: 1.4vw;
+    height: 1.3vw;
+  }
+
+  .iconsSet {
+    gap: 0.4vw;
+  }
+
+  .iconsCont {
+    gap: 0.9vw;
   }
 }

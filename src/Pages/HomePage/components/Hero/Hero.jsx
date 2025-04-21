@@ -11,7 +11,7 @@ const Hero = ({ openModal }) => {
       <div className={`container ${styles.heroCont}`}>
         <Slogan />
         <p className={`${styles.subtitle}`}>create your legacy</p>
-        <h1 className={`${styles.pageTitle}`}>tattoing from scratch</h1>
+        <h1 className={`${styles.pageTitle}`}>tattoing from&nbsp;scratch</h1>
         <OrderCourseBtn
           openModal={openModal}
           arrow={styles.arrow}

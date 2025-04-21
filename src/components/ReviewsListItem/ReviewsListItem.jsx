@@ -1,10 +1,9 @@
 import styles from "./ReviewsListItem.module.css";
 import Icon from "../Icon/Icon";
-import { useSwiper, useSwiperSlide } from "swiper/react";
+import { useSwiperSlide } from "swiper/react";
 
 const ReviewsListItem = ({ data }) => {
   const { review, reviewer, photo } = data;
-  // const swiper = useSwiper();
   const slide = useSwiperSlide();
   return (
     <div

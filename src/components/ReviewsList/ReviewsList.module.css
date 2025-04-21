@@ -3,21 +3,21 @@
 }
 
 .swiper {
-  width: 250px;
-  height: 420px;
+  width: 78.1vw;
+  height: 131.3vw;
 
-  margin-bottom: 61px;
+  margin-bottom: 19.1vw;
 }
 
 .swiperButtonsMobile {
   display: flex;
   justify-content: center;
-  gap: 12px;
+  gap: 3.8vw;
 }
 
 .button {
-  width: 60px;
-  height: 60px;
+  width: 18.8vw;
+  height: 18.8vw;
 
   display: flex;
   justify-content: center;
@@ -33,8 +33,8 @@
 }
 
 .icon {
-  width: 16px;
-  height: 16px;
+  width: 5vw;
+  height: 5vw;
 }
 
 .arrowPrev {
@@ -48,7 +48,7 @@
 
 .orderCourseBtn {
   width: 100%;
-  margin-top: 41px;
+  margin-top: 12.8vw;
   display: flex;
   justify-content: center;
 }
@@ -59,18 +59,29 @@
 
 @media screen and (min-width: 375px) {
   .swiper {
-    width: 280px;
+    width: 74.7vw;
   }
 }
 
 @media screen and (min-width: 768px) {
   .swiper {
+    width: 50vw;
+    height: 73.2vw;
     margin-bottom: 0;
   }
 
   .swiperButtonsMobile {
     display: none;
     visibility: hidden;
+  }
+
+  .button {
+    width: 10.5vw;
+    height: 10.5vw;
+  }
+
+  .icon {
+    width: 2.8vw;
   }
 
   .navBtnTablet {
@@ -85,36 +96,50 @@
   }
 
   .prevNavBtnTablet {
-    left: 32px;
+    left: 4.2vw;
     top: 50%;
 
-    transform: translate(0%, -50%);
+    transform: translate(0, -150%);
   }
 
   .nextNavBtnTablet {
-    right: 32px;
+    right: 4.2vw;
     top: 50%;
 
-    transform: translate(0, -50%);
+    transform: translate(0, -150%);
   }
 }
 
 @media screen and (min-width: 1440px) {
   .nextNavBtnTablet {
     right: 0;
+
+    transform: translate(0, -50%);
   }
 
   .prevNavBtnTablet {
     left: 0;
+
+    transform: translate(0, -50%);
+  }
+
+  .button {
+    width: 3.3vw;
+    height: 3.3vw;
+  }
+
+  .icon {
+    width: 0.8vw;
   }
 
   .swiperCont {
-    width: 708px;
-    padding-top: 20px;
+    width: 49.2vw;
+    padding-top: 1.4vw;
   }
 
   .swiper {
-    width: 448px;
+    width: 31.1vw;
+    height: 36.5vw;
     height: auto;
   }
 

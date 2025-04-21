@@ -6,8 +6,8 @@
 .buttonText {
   position: relative;
   display: inline-block;
-  padding: 25px;
-  margin-right: 3px;
+  padding: 6.7vw;
+  margin-right: 0.8vw;
 
   transition: background-color ease-in-out 250ms;
 
@@ -25,7 +25,7 @@
     )
     1;
 
-  font-size: 14px;
+  font-size: 3.7vw;
   font-weight: 800;
   text-transform: uppercase;
 }
@@ -33,8 +33,8 @@
 .corner {
   position: absolute;
 
-  width: 10px;
-  height: 10px;
+  width: 2.7vw;
+  height: 2.7vw;
 
   transition: all ease-in-out 250ms;
 
@@ -69,12 +69,12 @@
 
 .arrowCont {
   display: inline-block;
-  padding: 27px;
+  padding: 7.2vw;
 }
 
 .arrow {
-  width: 13px;
-  height: 13px;
+  width: 3.5vw;
+  height: 3.5vw;
 
   transition: transform ease-in-out 250ms;
 
@@ -115,22 +115,22 @@
 
 @media screen and (min-width: 1440px) {
   .buttonText {
-    padding: 36px 58px 36px 58px;
+    padding: 2.5vw 4vw 2.5vw 4vw;
 
-    font-size: 22px;
+    font-size: 1.5vw;
   }
 
   .corner {
-    width: 17px;
-    height: 17px;
+    width: 1.2vw;
+    height: 1.2vw;
   }
 
   .arrowCont {
-    padding: 40px;
+    padding: 2.8vw;
   }
 
   .arrow {
-    width: 20px;
-    height: 20px;
+    width: 1.4vw;
+    height: 1.4vw;
   }
 }
